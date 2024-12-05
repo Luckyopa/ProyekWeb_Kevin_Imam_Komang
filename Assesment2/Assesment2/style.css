@@ -1,0 +1,273 @@
+/* Reset margin dan padding untuk body dan html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.upper {
+    width: 100%;
+    height: 730px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/berchtesgadener-land-4592243_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Styling untuk header */
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between; /* Menyusun logo dan tombol login/registrasi */
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    display: flex;
+}
+.logo a{
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    margin-left: 40px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.logo a:hover{
+    border-radius: 20px;
+    background-color: #fff;
+    text-decoration: none;
+    align-content: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.5s ease;
+
+}
+/* Styling untuk logo */
+.logo h1 {
+    margin-left: 30px;
+    padding: 0;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* Styling untuk kontainer tombol login dan register */
+.tombolmasuk {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Pastikan tombol berada di kanan */
+}
+
+/* Styling untuk tombol login dan register */
+.tombolmasuk button {
+    padding: 10px 15px;
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tombolmasuk button:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+/* Jika Anda ingin elemen header tidak mengganggu layout layar */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+.teks1 {
+    margin-top: 100px;
+    margin-left: 30px ;
+    width: 500px;
+    /* border: 1px solid black; */
+    /* display: grid; */
+
+    height: 100%; /* Memastikan tinggi elemen penuh */
+    
+}
+
+.teks1 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.teks1 p {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    width: 700px;
+    height: 150px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.dicover button {
+    margin-top: 10px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, );
+    color: #000000;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.dicover button:hover {
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+/* Bagian Why Choose */
+.why {
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+.why h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Kontainer fitur */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Setiap fitur */
+.feature {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gambar fitur */
+.feature img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Judul fitur */
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Deskripsi fitur */
+.feature p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}
+footer{
+    background-color: #42413e;
+    margin-top: 200px;
+}
+footer h1{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+}
+.contacts{
+    padding-bottom: 100px;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 320px 320px 320px 320px;
+    
+}
+
+.contact{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.contact h1{
+    font-size: 45px;
+    margin-top: 100px;
+}
+.contact img{
+    margin-top: 20px;
+    width: 110px;
+    height: 100px ;
+}
+.contact h2{
+    margin-top: 20px;
+}
+.contact p{
+    margin-top: 20px;
+}
+
+/* CSS */
+.contact button{
+  align-items: center;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 18px;
+  width: auto;
+}
+
+

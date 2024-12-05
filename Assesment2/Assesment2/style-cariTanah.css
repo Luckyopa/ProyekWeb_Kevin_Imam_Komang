@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.header {
+    background-color: #d4b28c;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info i {
+    margin-right: 15px;
+}
+
+.header .user-info img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+body{
+    background-color: #FFF2E1;
+}
+main{
+    display: flex;
+}
+.container-1{
+    display: flex;
+}
+.sidebar {
+    width: 200px;
+    background-color: #d4b28c;
+    padding: 20px;
+    /* position: fixed; */
+    height: 638px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius:20px;
+    z-index: 1000;
+    position: sticky;
+}
+.user-info a{
+    text-decoration: none;
+    color: black;
+}
+
+.user-info a:hover{
+    color: white;
+}
+.menu-item a{
+    text-decoration: none;
+    color: black;
+}
+.menu-item a:hover{ 
+    border-radius: 20px;
+    font-weight:600;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.sidebar .menu-item i {
+    margin-right: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tombol1{
+    margin-left: 100px;
+    height: auto;
+}
+.tombol1 button{
+    margin-left: 20px;
+    background-color: #EAD8C0;
+    color: black;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.tombol1 button:hover {
+    margin-left: 20px;
+    background-color: #8D7B68;
+    color: black;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.tombol1 button a {
+    text-decoration: none;
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    width: 320px;
+    height: 312px;
+    margin-left:50px ;
+    background-color: #EAD8C0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+    cursor: pointer;
+    width: 320px;
+    height: 312px;
+    margin-left:50px ;
+    background-color: #d0b898;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin: 0 0 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.title {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.location {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.date {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center; /* Tambahkan ini */
+}
+
+.card-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+
+.btn-add-cart {
+    background-color: #8D7B68;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn-add-cart:hover {
+    background-color: #6B5A4E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
